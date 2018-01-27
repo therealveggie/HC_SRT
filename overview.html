@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta id="meta" name="viewport" content="width=device-width; initial-scale=0.1; maximum-scale=2.0; user-scalable=0;">
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Slab|Lato|Open+Sans+Condensed:300|Ubuntu" rel="stylesheet">
+<link rel="stylesheet" href="css/style_overview.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Health Canada SRT Tutorials</title>
+</head>
+<body>
+<a href="#home"><center><img src="images/hc.png" width="50%" height="50%"></a><br>
+<ul>
+  <li><a href="HC Website.html">Home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Tutorials</a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="apv1.html">Autopopulate</a>
+      <a href="#home">Screening</a>
+      <a href="#home">Review</a>
+	  <a href="#home">Issues</a>
+	  <a href="#home">Data</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction1()">Project</a>
+    <div class="dropdown-content" id="myDropdown1">
+      <a href="Overview.html">Overview</a>
+      <a href="History.html">History</a>
+      <a href="Tools.html">Tools</a>
+    </div>
+  </li>
+  <li><a href="Team.html">Team</a></li>
+  <li><a href="Contact_Us.html">Contact Us</a></li>
+</ul>
+<h1>O V E R V I E W</h1>
+<div class = "line"></div> 
+<div class="backsplash">
+	<br>
+	<br>
+	<div class="container">
+	<div class="thumbnail">
+		<div class="image">
+		<div class="firstclm"><br><h2>WHAT IS SRT?</h2><p> Comprised of multiple phases, the Screening & Review Tools are built to help you automate the documentation process as much as possible. 
+			This means less error-prone manual data entry and more accurate, precise data documentation. 
+			<br><br><a href="projectcharter.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="color: red; font-size: 2.4vw;margin-right: .5em;" aria-hidden="true"></i>Projectcharter.pdf</a><br></p>
+			</div></div></div>
+		<div class="secondclm">
+			<div class="thumbnail">
+				<div class="image">
+					<img width="100%" style="border-radius: 10px; border:3px solid white" src = "images/srt.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="thirdclm"><p><br><br>The Screening & Review Tools aid in many aspects of current documentation practices. The tools include:
+			<br><br>Autopopulate<br>
+			Screening<br>
+			Review<br>
+			Issues<br>
+			Reporting
+			<br><br><br></p>
+		</div>
+	</div>
+	<br><br>
+</div>
+<div class="backsplashh"><br><br><br><br><br><br><br><br></div>
+<script>			
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+	document.getElementById("myDropdown1").classList.remove("show");
+}
+function myFunction1() {
+    document.getElementById("myDropdown1").classList.toggle("show");
+	document.getElementById("myDropdown").classList.remove("show");
+}
+
+// Close the dropdown if the user clicks outside of it; also modified for if anyone clicks outside of modal window
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</body>
+</html>

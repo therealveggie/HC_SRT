@@ -1,0 +1,338 @@
+html,body {
+    margin:0;
+    padding:0;
+}
+.text-center {
+    text-align:center;
+}
+
+h1 {	padding: 0;
+	margin: 0;
+	font-family: 'Century Gothic';
+	text-align: center;
+	font-size: 42px;
+	font-weight:normal;
+}
+h2 {	padding: 0;
+	margin: 0;
+	background-color: lightgrey;
+	font-family: 'Century Gothic';
+	text-align: center;
+	font-size: 15px;
+	font-weight:normal;
+}
+h3.phase{
+	font-family: 'Century Gothic';
+	font-size: 50px;
+}
+h4 {	background-color: #364351;
+	padding: 0;
+	margin: 0;
+	font-family: 'Century Gothic';
+	text-align: center;
+	font-size: 43px;
+	font-weight:normal;
+	color: #DDD6D4;
+	
+}
+p.p2 {  padding: 0;
+	margin-top: 5px;
+	background-color: #8A323A;
+	font-family: 'Century Gothic';
+	text-align: center;
+	font-size: 26px;
+	font-weight:normal;
+	color: white;
+}
+p.p1 {	padding: 0;
+	margin-left:12%;
+	margin-bottom: 0;
+	font-family: 'Century Gothic';
+	text-align: center;
+	font-size: 25px;
+	font-weight:normal;
+}
+.bgg {padding: 0;
+	margin: 0;
+	background-color: #DDD6D4;
+}
+p.blurb {margin-left: 12%;
+	margin-right: 10%;
+	margin-bottom: 0;
+	font-family: 'Century Gothic';
+	text-align: center;
+	font-size: 25px;
+	font-weight:normal;
+	color: #5E5E5E;
+} 
+
+p.phase_des{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 23px;
+	vertical-align:middle;
+}
+.bg {   background-color: #9DA3A4;
+	align: center;
+}
+.bg1 {background-color: #364351;
+	width:100%;
+    position:relative;
+    left:0;
+    right:0;
+}
+
+.bg2 {background-color: gray;
+	width:100%;
+    position:relative;
+    left:0;
+    right:0;
+}
+
+.blurbb {padding: 0;
+	background-color: grey;
+	margin: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	display: inline-block;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+li {
+    float: left;
+	border-right: 1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	font-size: 20px;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #d9d9d9;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -73px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+i {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+/* The phases */
+
+.list_page article:nth-child(odd) .list_img{ 
+    float:left;
+	margin-left: 250px;
+}
+.list_page article:nth-child(even) .list_img{
+     float:right;
+	 margin-right: 250px;
+}
+
+.list_page article:nth-child(odd) .list_text{ 
+    float: left;
+	max-width: 500px;
+}
+.list_page article:nth-child(even) .list_text{
+    float:right;
+	max-width: 500px;
+}
+
+.list_text{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 24px;
+	text-align: center;
+}
+
+/* tell the container's children to float left: */
+.float-my-children > * {
+    float:left;
+    margin-left:18%;
+	margin-right:18%;
+}
+
+/* this is called a clearfix. it makes sure that the container's children floats are cleared, without using extra markup */
+
+.clearfix {
+    *zoom:1 /* for IE */
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* end clearfix*/
+
+.pg{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 24px;
+}
+
+#counter {
+   background: url('counter-bg.jpg') 50% 0 repeat-y fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+#counter .counter-text {
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+h3.numbers{
+	color: #ff6600;
+	font-size: 32px;
+	text-align: center;
+}
+
+#review{
+	visibility: hidden;
+}
+
+.wrap {
+   width:50%;
+   margin:0 auto;
+}
+.left_col {
+   float:left;
+   width:40%;
+   font-family: 'Open Sans Condensed', sans-serif;
+   font-size: 24px;
+   color: #d9d9d9;
+}
+.right_col {
+   float:right;
+   width:40%;
+   font-family: 'Open Sans Condensed', sans-serif;
+   font-size: 24px;
+   color: #d9d9d9;
+}
+
+p.headd{
+   font-family: "Century Gothic";
+   font-size: 33px;
+   color: gray;
+}
+
+p.description{
+   font-family: 'Open Sans Condensed', sans-serif;
+   font-size: 33px;
+   color: #d9d9d9;
+   width: 60%;
+}
+
+/* The side navigation menu */
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 165px;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #A9B7C0; /* Black*/
+    padding-top: 287px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 33px;
+    color: #DDD6D4;
+    display: block;
+    transition: 0.3s;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-align: left;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+	cursor: pointer;
+}
+
+.sidenav a.active{
+	background-color: firebrick;
+}
+
+.hidden{
+	display: none;
+}
+
+
+
+
+
+

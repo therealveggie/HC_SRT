@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Slab|Lato|Open+Sans+Condensed:300|Ubuntu" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+
+      <link rel="stylesheet" href="css/style_main.css">
+      <link rel="stylesheet" type="text/css" href="css/reusable/header.css">
+      <link rel="stylesheet" type="text/css" href="css/reusable/navigation.css">
+      <link rel="stylesheet" type="text/css" href="css/reusable/spacers.css">
+      <title> Health Canada SRT Tutorials</title>
+    </head>
+
+  <body>
+
+    <div>
+      <a href="http://www.hc-sc.gc.ca/index-eng.php"><img class="healthCanadaHeader" src="images/hcExtended.png"></a>
+    </div>
+
+    <div class="navigationContainer">
+      <ul class="navigation">
+        <li class="border">123123</li>
+        <li class="border"><a href="HC Website.html">Home</a></li>
+        <li class="dropdown border">
+          <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Tutorials</a>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="apv1.html">Autopopulate</a>
+            <a href="#home">Screening</a>
+            <a href="#home">Review</a>
+          <a href="#home">Issues</a>
+          <a href="#home">Data</a>
+          </div>
+        </li>
+        <li class="dropdown border">
+          <a href="javascript:void(0)" class="dropbtn" onclick="myFunction1()">Project</a>
+          <div class="dropdown-content" id="myDropdown1">
+            <a href="Overview.html">Overview</a>
+            <a href="History.html">History</a>
+            <a href="Tools.html">Tools</a>
+          </div>
+        </li>
+        <li class="border"><a href="Team.html">Team</a></li>
+        <li class="border"><a href="Cotact_Us.html">Contact Us</a></li>
+        <li class="border">123123</li>
+      </ul>
+    </div>
+
+    <div class="rel">
+      <div class="content">
+      	 <div class="content_container">
+        		  The SRT Project is for
+          	<ul class="content_container_list">
+          		<li>You!</li>
+          		<li>Lorraine</li>
+          		<li>Susan</li>
+          		<li>Sergio</li>
+          		<li>Christine</li>
+          		<li>Rosie</li>
+          		<li>Will</li>
+          		<li>Phillip</li>
+          		<li>Martin</li>
+          		<li>Sudip</li>
+          		<li>Albert</li>
+          	</ul>
+        </div>
+      </div>
+    </div>
+
+  <div class="spacer100"></div>
+
+  <!-- i tag below is not for italics, it's for bootstrap icons -->
+  <div class="tooltipbar">
+      <a href="Contact_Us.html"><div class="tooltip icon"><i style="font-size: 2.8vw;" class="material-icons" id="phone">call</i><span class="tooltiptext">Contact Us</span></div></a>
+      
+      <a href="Team.html"><div class="tooltip icon"><i style="font-size: 2.8vw;" class="material-icons" id="team">group</i><span class="tooltiptext">Team</span></div></a>
+      
+      <a href="apv1.html"><div class="tooltip icon"><i style="font-size: 2.8vw;" class="material-icons" id="school">school</i><span class="tooltiptext">Tutorials</span></div></a>
+      
+      <a href="Project.html"><div class="tooltip icon"><i style="font-size: 2.8vw;" class="material-icons" id="suitcase">business_center</i><span class="tooltiptext">Project</span></div></a>
+  </div>
+
+  <div class="rel">
+      <center>
+        <img src="pictures/counter.png" height="100%">
+      </center>
+  </div>
+
+    <script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    	document.getElementById("myDropdown1").classList.remove("show");
+    }
+    function myFunction1() {
+        document.getElementById("myDropdown1").classList.toggle("show");
+    	document.getElementById("myDropdown").classList.remove("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it; also modified for if anyone clicks outside of modal window
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var d = 0; d < dropdowns.length; d++) {
+          var openDropdown = dropdowns[d];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+  </body>
+</html>

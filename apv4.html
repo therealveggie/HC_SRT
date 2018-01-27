@@ -1,0 +1,189 @@
+<!-- THE OG TUTORIALS PAGE -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Slab|Open+Sans+Condensed:300|Ubuntu" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="css/style_z.css">
+<link rel="stylesheet" href="css/navbar.css">
+<title>HC: Phase I Tutorials</title>
+</head>
+
+<div id = "body">
+<body style="background-color:#f2f2f2;">
+<a href="http://www.hc-sc.gc.ca/index-eng.php"><center><img src="images/hc.png" width="50%" height="50%"></a><br>
+<ul>
+  <li><a href="HC Website.html">Home</a></li>
+  <li><a href="#home">Tutorials</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Project</a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="Overview.html">Overview</a>
+      <a href="History.html">History</a>
+      <a href="Tools.html">Tools</a>
+    </div>
+  </li>
+  <li><a href="Team.html">Team</a></li>
+  <li><a href="Contact_Us.html">Contact Us</a></li>
+</ul>
+<!--
+<ul class = "side">
+	  <li><a href="#home">Autopopulate</a></li>
+	  <li><a href="#news">Screening</a></li>
+	  <li><a href="#contact">Review</a></li>
+	  <li><a href="#about">Issues</a></li>
+	  <li><a href="#about">Data</a></li>
+</ul>
+-->
+
+<div class="sidenav">
+	<div class ="dropdownn">
+	  <a class="dropbtnn active">Autopopulate</a>
+		<div class="dropdown-contentt">
+			<a href="apv1.html">Video 1: First Login  </a>
+			<a href="apv2.html">Video 2: Opening Templates  </a>
+			<a href="apv3.html">Video 3: Saving Data with a Control Number </a>
+			<a href="apv4.html">Video 4: Loading Data and Using Overwrite and Force DSTS  </a>
+			<a href="apv5.html">Video 5: Designing a Template  </a>
+			<a href="apv6.html">Video 6: Managing User Accounts </a>
+			<a href="apv7.html">Video 7: Managing Fields </a>
+			<a href="apv8.html">Video 8: Find Submissions and Get Documents </a>
+			<a href="apv9.html">Video 9: Navigate Changes </a>
+			<a href="apv10.html">Video 10: Managing Changes </a>
+		</div>
+	</div>
+	<div class ="dropdownn">
+	  <a class="dropbtnn" href="#">Screening</a>
+		<div class="dropdown-contentt">
+			<a href="#">Video 1: </a>
+			<a href="#">Video 2: </a>
+			<a href="#">Video 3: </a>
+		</div>
+	</div>
+	<div class ="dropdownn">
+	  <a class="dropbtnn" href="#">Review</a>
+		<div class="dropdown-contentt">
+			<a href="#">Video 1: </a>
+			<a href="#">Video 2: </a>
+			<a href="#">Video 3: </a>
+		</div>
+	</div>
+	<div class ="dropdownn">
+	  <a class="dropbtnn" href="#">Issues</a>
+		<div class="dropdown-contentt">
+			<a href="#">Video 1: </a>
+			<a href="#">Video 2: </a>
+			<a href="#">Video 3: </a>
+		</div>
+	</div>
+	<div class ="dropdownn">
+	  <a class="dropbtnn" href="#">Data</a>
+		<div class="dropdown-contentt">
+			<a href="#">Video 1: </a>
+			<a href="#">Video 2: </a>
+			<a href="#">Video 3: </a>
+		</div>
+	</div>
+</div>
+
+<div id = "TitleVideo">
+	<p class = "vidTitle">Video 4: Loading Data and Using Overwrite and Force DSTS</p>
+	<!-- Tutorial 4 -->
+	<br>
+	<br>
+	<br>
+
+	<div class="video">
+		<div classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,28;" WIDTH=1024 HEIGHT=792><PARAM NAME=movie VALUE="tutorials/4.%20Loading%20Data%20and%20Using%20Overwrite%20and%20Force%20DSTS.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE="#FFFFFF"><param name="allowFullScreen" value="true" ><EMBED src="tutorials/4.%20Loading%20Data%20and%20Using%20Overwrite%20and%20Force%20DSTS.swf" allowfullscreen="true" quality=high bgcolor="#FFFFFF"  WIDTH=1024 HEIGHT=792 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></div>
+	</div>
+	<br>
+</div>
+
+</body>
+</div>
+</html>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+var arr = new Array(0);
+
+/*function playVideo(videonumber) {	
+	if (videonumber == arr[arr.length-1]{
+	None}
+	else{
+		var vidstr = videonumber.toString();
+		var str1 = "video";
+		var vidnum = str1.concat(vidstr);
+		var vidnummp4 = vidnum.concat(".mp4");
+		var x = document.createElement("VIDEO");
+		x.setAttribute("src",vidnummp4);
+		x.setAttribute("width", "640");
+		x.setAttribute('align', 'center')
+		x.setAttribute("height", "480");
+		x.setAttribute("controls", "controls");
+		x.setAttribute("center", "center")
+		document.body.appendChild(x);
+		arr.push(videonumber);
+	}
+}*/
+
+function playVideo(videonumber) {	
+		var vidstr = videonumber.toString();
+		var str1 = "video";
+		var vidnum = str1.concat(vidstr);
+		var vidnummp4 = vidnum.concat(".mp4");
+		var x = document.createElement("VIDEO");
+		x.setAttribute("src",vidnummp4);
+		x.setAttribute("width", "640");
+		x.setAttribute('align', 'center')
+		x.setAttribute("height", "480");
+		x.setAttribute("controls", "controls");
+		x.setAttribute("center", "center")
+		document.body.appendChild(x);
+}
+
+
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content
+function myFunctionn() {
+    document.getElementById("myDropdownn").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtnn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-contentt");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+*/
+</script>
+

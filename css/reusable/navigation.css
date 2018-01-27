@@ -1,0 +1,19 @@
+.navigationContainer {
+	display: table;
+	margin: 0 auto;
+	border: 1px #bbb solid;
+	border-radius: 5px;
+}
+
+.navigation {
+	list-style-type: none;
+	margin: 0;
+    padding: 0 ;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.navigation li {
+	display: inline-block;
+	min-width: 100px;
+	text-align: center;
+}

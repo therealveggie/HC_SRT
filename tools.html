@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Slab|Lato|Open+Sans+Condensed:300|Ubuntu" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="css/style_tools.css">
+<link rel="stylesheet" href="css/bootstrap.min.tool.css">
+<link rel="stylesheet" href="css/scrolling.css">
+<link rel="stylesheet" href="css/w3.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="www.justinaguilar.com/animations/css/animations.css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<title>Health Canada SRT Tutorials</title>
+</head>
+<body style="background-color:#f2f2f2;">
+<a href="http://www.hc-sc.gc.ca/index-eng.php"><center><img src="images/hc.png" width="50%" height="50%" style="margin-bottom: 0;"></a><br>
+
+<ul class="nav">
+  <li class = "links"><a href="HC Website.html">Home</a></li>
+  <li class="dropdown links">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Tutorials</a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="apv1.html">Autopopulate</a>
+      <a href="#home">Screening</a>
+      <a href="#home">Review</a>
+	  <a href="#home">Issues</a>
+	  <a href="#home">Data</a>
+    </div>
+  </li>
+  <li class="dropdown links">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction1()">Project</a>
+    <div class="dropdown-content" id="myDropdown1">
+      <a href="Overview.html">Overview</a>
+      <a href="History.html">History</a>
+      <a href="Tools.html">Tools</a>
+    </div>
+  </li>
+  <li class = "links"><a href="Team.html">Team</a></li>
+  <li class = "links"><a href="Contact_Us.html">Contact Us</a></li>
+</ul>
+
+<nav class="sidenav">
+   <div class="w3-accordion">
+		<a class = "w3-green">
+		Tools 
+		</a>
+    <div class = "toolNames">
+		<a href="#autopop" class = "smoothScroll active" id="autopopp">Autopopulate</a>
+		<a href="#screening" class = "smoothScroll" id="screeningg">Screening</a>
+		<a href="#rafay" class = "smoothScroll" id="revieww">Review</a>
+		<a href="#issues" class = "smoothScroll" id="issuess">Issues</a>
+		<a href="#reporting" class = "smoothScroll" id="reportingg">Reporting</a>
+     </div>
+   </div>
+</nav>
+
+<!-- <div class="sidenav" id = "sidenav">
+	  <a class="dropbtnn" id="projectt">Project</a>
+	  <a class="dropbtnn" id="autopopp">Autopopulate</a>
+	  <a class="dropbtnn" id="screeningg">Screening</a>
+	  <a class="dropbtnn" id="revieww">Review</a>
+	  <a class="dropbtnn" id="issuess">Issues</a>
+	  <a class="dropbtnn" id="reportingg">Reporting</a>
+</div> -->
+
+<section id="about" class="paralla-sectionn">
+	<div class="container">
+		<div id = "autopopulate_section">
+			<div class="row">
+			
+				<div class="col-md-6 col-sm-12">
+				<div id="autopop">
+				<img id="autopop_img" src="images/autop.PNG" class="img-responsive" alt="about img 1">
+				</div>
+				</div>
+				
+				<div class="col-md-6 col-sm-12">
+					<div class = "about-des">
+						<br>
+						<h3 class = "phase">Autopopulate</h3>
+						<p class = "phase_des">allows users to auto-populate tombstone events in documents.</p>
+						<i id="autopop_but" class="material-icons" style="font-size:33px; cursor: pointer;">add_circle_outline</i>
+					</div>
+				</div>
+
+			</div>
+			
+			<div class = "wrapper1" id = "autopop_goals">
+				<div class="rr rr-left">
+					<div>
+						<h2 class = "title">Goals</h2>
+						<ul class = "info">
+							<li>Reduce and ideally eliminate tombstone data entry</li>
+							<li>Easily access tombstone data with a relevant control number</li>
+						</ul>
+					</div>
+				</div>
+				<div class="rr rr-right">
+					<div>
+						<h2 class = "title">Functions</h2>
+						<ul class = "info">
+							<li>Scan, retrieve, and populate data for content controlled fields with the relevent control number</li>	
+							<li>Save updated or new data to the local database (e.g. non-tombstone data)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id = "screening_section"> 
+			<div class="row">
+				
+				<div class="col-md-6 col-sm-12">
+					<div class="about-des">
+					
+						<h3 class = "phase">Screening</h3>
+						<p class = "phase_des">Removes the burden from digging through the post NOC changes guidance document. Seamlessly navigate through an organized 
+						list of changes accompanied by a simple, yet powerful assess tool for thorough and effective analysis.</p>
+						<i id="screening_but" class="material-icons" style="font-size:33px; cursor: pointer;">add_circle_outline</i>
+					</div>
+				</div>
+				
+				<div class="col-md-6 col-sm-12">
+				<div id="screening">
+					<img id="screening_img" src="images/screening.png" class="img-responsive" alt="about img 2">
+				</div>
+				</div>
+
+			</div> <br><br>
+			
+			<div class = "wrapper2" id = "screening_goals">
+				<div class="rr1 rr1-left">
+					<div>
+						<h2 class = "title">Goals</h2>
+						<ul class = "info">
+							<li>Partially automate the screening process</li>
+							<li>Give reviewers easy access to information pertinent to their unique submission to facilitate with the screening process.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="rr1 rr1-right">
+					<div>
+						<h2 class = "title">Functions</h2>
+						<ul class = "info">
+							<li>Execute (advanced) search queries on the database to display the desired changes, criteria or requirements</li>	
+							<li>Navigate the POST NOC guidance information with endless filteration options</li>
+							<li>"Assess" changes through an interactive platform which generates a unique table including:
+								<ul>
+									<li>list of changes</li>
+									<li>met and unmet criteria for each change </li>
+									<li>the list of required documents </li>
+									<li>submission type </li>
+								</ul>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id = "review_section">
+			<div class="row">
+			
+				<div class="col-md-6 col-sm-12">
+				
+					<img id="review_img" src="images/review.png" class="img-responsive" alt="about img 1">
+				
+				</div>
+				
+				<div class="col-md-6 col-sm-12">
+					<div class="about-des">
+						<br>
+						<h3 id="rafay" class = "phase">Review</h3>
+						<p class = "phase_des">Effortlessly access relevant documents from internal and external resources. Easily navigate through
+						results with filter options or add data content using a built-in interface</p>
+						<i id="review_but" class="material-icons" style="font-size:33px; cursor: pointer;">add_circle_outline</i>
+					</div>
+				</div>
+
+			</div>
+			
+			<div class = "wrapper1" id = "review_goals">
+				<div class="rr rr-left">
+					<div>
+						<h2 class = "title">Goals</h2>
+						<ul class = "info">
+							<li>Facilitate access to supporting information required for screening and review </li>
+							<li>Access appropriate documents linked to the selected headers and modules</li>
+						</ul>
+					</div>
+				</div>
+				<div class="rr rr-right">
+					<div>
+						<h2 class = "title">Functions</h2>
+						<ul class = "info">
+							<li>Search for specific documents by applying filters which execute a query search to return desired documents</li>	
+							<li>Headers can be bookmarked which will enable a context sensative display - documents pertinent to the cursor location will be displayed </li>
+							<li>Documents generated from a search query or returned as a bookmarked document can be opened directly from the tool. </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<br>
+		
+		<div id = "issues_section">
+			<div class="row">
+				
+				<div class="col-md-6 col-sm-12">
+					<div class="about-des">
+						
+						<h3 class = "phase">Submission Issues Management</h3>
+						<p class = "phase_des">easily manage issues encountered during the review process and 
+						navigate through the flow and resolution in a coherent manner</p>
+						<i id="issues_but" class="material-icons" style="font-size:33px; cursor: pointer;">add_circle_outline</i>
+					</div>
+				</div>
+				
+				<div class="col-md-6 col-sm-12">
+				<div id = "issues">
+					<img id="issues_img" src="images/issues.png" class="img-responsive" alt="about img 2">
+				</div>
+				</div>
+
+			</div>
+			<br>
+					
+			<div class = "wrapper2" id = "issues_goals">
+				<div class="rr1 rr1-left">
+					<div>
+						<h2 class = "title">Goals</h2>
+						<ul class = "info">
+							<li>Provide an efficient and organized way to manage issues encountered through the screening and review process </li>
+							<li>Navigate through the entire screening process of a current or completed review </li>
+						</ul>
+					</div>
+				</div>
+				<div class="rr1 rr1-right">
+					<div>
+						<h2 class = "title">Functions</h2>
+						<ul class = "info">
+							<li>Issues can be created and linked to a control number, user, function, and location. Issues are stored locally until commited by the reviewer. Each issue is also tagged with metadata for reporting purposes</li>	
+							<li>The issue resolution flow allows reviewers to track issue resolution and request information from sponsors or ask for external expertise. Issues are solved locally until chosen to be commited to the database wherein issues are tracked for business reporting </li>
+							<li>Clarifax generation? </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br><br>
+		
+		<div id = "reporting_section">
+			<div class="row">
+			
+				<div class="col-md-6 col-sm-12">
+				<div id = "reporting">
+					<img id="reporting_img" src="images/reporting.png" class="img-responsive" alt="about img 1">
+				</div>
+				</div>
+				
+				<div class="col-md-6 col-sm-12">
+					<div class="about-des">
+						<br>
+						<h3 class = "phase">Business Reporting</h3>
+						<p class = "phase_des">access information stored in the BGTD database along 
+						with queries to search the SRT, DPT, and DSTS databases. Easily export queries and information to Excel for effortless reporting</p>
+						<i id="reporting_but" class="material-icons" style="font-size:33px; cursor: pointer;">add_circle_outline</i>
+					</div>
+				</div>
+
+			</div>
+			<div class = "wrapper1" id = "reporting_goals">
+				<div class="rr rr-left">
+					<div>
+						<h2 class = "title">Goals</h2>
+						<ul class = "info">
+							<li>Obtain a list of content controlled field names and the data sources. </li>
+							<li>Scan, retrieve, and populate data for content controlled fields with the relevent control number </li>
+						</ul>
+					</div>
+				</div>
+				<div class="rr rr-right">
+					<div>
+						<h2 class = "title">Purpose</h2>
+						<ul class = "info">
+							<li>Scan the document for content controlled fields with names matching those in the local database </li>	
+							<li>Save updated or new data to the local database (e.g. non-tombstone data)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</section>
+
+<!-- <script>
+$(document).ready(function(){
+
+   $("div").mouseenter(function(){
+   	 var id = $(this).attr('id');
+   	 $('a').removeClass('active');
+   	 $("[href=#"+id+"]").addClass('active');
+   });
+
+});
+</script> -->
+
+<script>
+$(document).ready(function(){
+  var a=+$('#autopopulate_section').height();
+  var b=$('#screening_section').height();
+  var c=$('#review_section').height();
+  console.log(a);
+  console.log(b);
+  console.log(c);
+  $(window).on('scroll',function(){
+  $('#autopopp, #screeningg, #revieww').removeClass('active');
+  
+  var st=$(document).scrollTop();
+  
+  if($(window).scrollTop() + $(window).height() == $(document).height()) {
+       $('#reportingg').addClass('active');
+   }
+  else if(st>a+b){
+  $('#revieww').addClass('active');
+  $('#reportingg').removeClass('active');
+  }
+  else if(st>a){
+  $('#screeningg').addClass('active');
+  $('#reportingg').removeClass('active');
+  }
+  else if(st<a){
+  $('#autopopp').addClass('active');
+  $('#reportingg').removeClass('active');
+  }
+ })
+})
+</script>
+
+<script>
+$('.tabgroup > div').hide();
+$('.tabgroup > div:first-of-type').show();
+$('.tabs a').click(function(e){
+  e.preventDefault();
+    var $this = $(this),
+        tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
+        others = $this.closest('li').siblings().children('a'),
+        target = $this.attr('href');
+    others.removeClass('active');
+    $this.addClass('active');
+    $(tabgroup).children('div').hide();
+    $(target).show();
+  
+})
+</script>
+
+<script>
+$(document).ready(function(){
+    $(".bg1, .bg2, .wrapper1, .wrapper2").hide();
+});
+
+<!-- THE STUFF TO SHOW/HIDE INFO -->
+
+$(document).ready(function(){
+    $("#issues_but").click(function(){
+		$('#issues_img').toggleClass('hatch');
+        $("#issues_goals").slideToggle(1000);
+		<!-- $(this).find('i').toggleText('add_circle_outline remove_circle_outline'); -->
+		$(this).text($(this).text() == "remove_circle_outline" ? "add_circle_outline" : "remove_circle_outline");
+    });
+});
+
+$(document).ready(function(){
+    $("#autopop_but").click(function(){
+		$('#autopop_img').toggleClass('hatch');
+        $("#autopop_goals").slideToggle(1000);
+		<!-- $(this).find('i').toggleText('add_circle_outline remove_circle_outline'); -->
+		$(this).text($(this).text() == "remove_circle_outline" ? "add_circle_outline" : "remove_circle_outline");
+    });
+});
+
+$(document).ready(function(){
+    $("#screening_but").click(function(){
+		$('#screening_img').toggleClass('hatch');
+        $("#screening_goals").slideToggle(1000);
+		<!-- $(this).find('i').toggleText('add_circle_outline remove_circle_outline'); -->
+		$(this).text($(this).text() == "remove_circle_outline" ? "add_circle_outline" : "remove_circle_outline");
+    });
+});
+
+$(document).ready(function(){
+    $("#review_but").click(function(){
+		$('#review_img').toggleClass('hatch');
+        $("#review_goals").slideToggle(1000);
+		<!-- $(this).find('i').toggleText('add_circle_outline remove_circle_outline'); -->
+		$(this).text($(this).text() == "remove_circle_outline" ? "add_circle_outline" : "remove_circle_outline");
+    });
+});
+
+$(document).ready(function(){
+    $("#reporting_but").click(function(){
+	$('#reporting_img').toggleClass('hatch');
+        $("#reporting_goals").slideToggle(1000);
+		<!-- $(this).find('i').toggleText('add_circle_outline remove_circle_outline'); -->
+		$(this).text($(this).text() == "remove_circle_outline" ? "add_circle_outline" : "remove_circle_outline");
+    });
+});
+</script>
+
+<script>
+function myAccFunc1() {
+    var x = document.getElementById("demoAcc1");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-green";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-green", "");
+    }
+}
+
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-green";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-green", "");
+    }
+}
+</script>
+
+<script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+	document.getElementById("myDropdown1").classList.remove("show");
+}
+function myFunction1() {
+    document.getElementById("myDropdown1").classList.toggle("show");
+	document.getElementById("myDropdown").classList.remove("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<!-- <script>   
+ $(window).scroll(function () {
+   $('#autopop').each(function () {
+   var topOfWindow = $(window).scrollTop(),
+   bottomOfWindow = topOfWindow + $(window).height();
+     
+     var imagePos = $(this).offset().top;
+     
+     if(imagePos <= bottomOfWindow-100 && imagePos >= topOfWindow-250){
+       $(this).addClass('hatch');
+	   $(window).off("scroll.socialIcon");
+       }else{
+       $(this).removeClass('hatch');
+       }
+   });
+ });
+</script> -->
+
+<!-- <script>
+	$('#autopop_but').click(function() {
+		$('#autopop_img').addClass('hatch');
+	});
+</script>
+
+<script>
+	$('#screening_but').click(function() {
+		$('#screening_img').addClass('hatch');
+	});
+</script> -->
+
+<!-- <script>
+	$('#review_but').click(function() {
+		$('#review_img').addClass('hatch');
+	});
+</script> -->
+
+<!-- <script>
+	$('#issues_but').click(function() {
+		$('#issues_img').addClass('hatch');
+	});
+</script>
+
+<script>
+	$('#reporting_but').click(function() {
+		$('#reporting_img').addClass('hatch');
+	});
+</script> -->
+
+
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+
+<!-- <script>
+$("#revieww").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#review").offset().top
+		}, 2000);
+});
+</script>
+
+<script>
+$("#projectt").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#project").offset().top
+    }, 2000);
+});
+</script>
+
+<script>
+$("#autopopp").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#autopop").offset().top
+    }, 2000);
+});
+</script>
+
+<script>
+$("#screeningg").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#screening").offset().top
+    }, 2000);
+});
+</script>
+
+<script>
+$("#issuess").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#issues").offset().top
+    }, 2000);
+});
+</script>
+
+<script>
+$("#reportingg").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#reporting").offset().top
+    }, 2000);
+});
+</script> -->
+
+<!-- <script>
+$(window).scroll(function() {
+    var windscroll = $(window).scrollTop();
+    if (windscroll >= 100) {
+        $('.paralla-sectionn section').each(function(i) {
+            if ($(this).position().top <= windscroll - 20) {
+                $('.sidenav a.active').removeClass('active');
+                $('.sidenav a').eq(i).addClass('active');
+            }
+        });
+
+    } else {
+
+        $('.sidenav a.active').removeClass('active');
+        $('.sidenav a:first').addClass('active');
+    }
+
+}).scroll();
+</script> -->
+ 
+</body>
+</html>
