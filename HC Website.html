@@ -15,37 +15,33 @@
     </head>
 
   <body>
-
     <div>
       <a href="http://www.hc-sc.gc.ca/index-eng.php"><img class="healthCanadaHeader" src="images/hcExtended.png"></a>
     </div>
 
-    <div class="navigationContainer">
-      <ul class="navigation">
-        <li class="border">123123</li>
-        <li class="border"><a href="HC Website.html">Home</a></li>
-        <li class="dropdown border">
-          <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Tutorials</a>
-          <div class="dropdown-content" id="myDropdown">
-            <a href="apv1.html">Autopopulate</a>
-            <a href="#home">Screening</a>
-            <a href="#home">Review</a>
-          <a href="#home">Issues</a>
-          <a href="#home">Data</a>
-          </div>
-        </li>
-        <li class="dropdown border">
-          <a href="javascript:void(0)" class="dropbtn" onclick="myFunction1()">Project</a>
-          <div class="dropdown-content" id="myDropdown1">
-            <a href="Overview.html">Overview</a>
-            <a href="History.html">History</a>
-            <a href="Tools.html">Tools</a>
-          </div>
-        </li>
-        <li class="border"><a href="Team.html">Team</a></li>
-        <li class="border"><a href="Contact_Us.html">Contact Us</a></li>
-        <li class="border">123123</li>
-      </ul>
+    <div class="navbar">
+
+      <a href="#home">Home</a>
+
+      <div class="dropdown">
+        <button class="dropbtn" onclick="drop1()">Tutorials</button>
+        <div class="dropdown-content" id="myDropdown1">
+          <a href="#">Yolo1</a>
+          <a href="#">Yolo2</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn" onclick="drop2()">Project</button>
+        <div class="dropdown-content" id="myDropdown2">
+          <a href="#">Yolo1</a>
+          <a href="#">Yolo2</a>
+        </div>
+      </div> 
+
+      <a href="#">Team</a>
+      <a href="#">Contact Us</a>
+
     </div>
 
     <div class="rel">
@@ -89,27 +85,28 @@
   </div>
 
     <script>
-    function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-    	document.getElementById("myDropdown1").classList.remove("show");
+    function drop1() {
+      document.getElementById("myDropdown1").classList.toggle("show");
+      document.getElementById("myDropdown2").classList.remove("show");
     }
-    function myFunction1() {
-        document.getElementById("myDropdown1").classList.toggle("show");
-    	document.getElementById("myDropdown").classList.remove("show");
+
+    function drop2() {
+      document.getElementById("myDropdown1").classList.remove("show");
+      document.getElementById("myDropdown2").classList.toggle("show");
     }
 
     // Close the dropdown if the user clicks outside of it; also modified for if anyone clicks outside of modal window
     window.onclick = function(e) {
-      if (!e.target.matches('.dropbtn')) {
-
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        for (var d = 0; d < dropdowns.length; d++) {
-          var openDropdown = dropdowns[d];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
+        if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown1");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          var myDropdown = document.getElementById("myDropdown2");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
         }
-      }
     }
   </script>
   </body>
