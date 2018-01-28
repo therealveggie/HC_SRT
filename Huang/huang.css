@@ -57,10 +57,9 @@ body{
 }
 
 #standard{
-    width:100%;
-    margin:auto;
+    left:-22vw;
     color:white;
-    font-family:sans-serif;
+    font-family:serif;
     position:relative;
     z-index:8;
     top:9vh;
