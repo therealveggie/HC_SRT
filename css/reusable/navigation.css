@@ -13,6 +13,11 @@
     text-decoration: none;
 }
 
+.position {
+    display: table;
+    margin: 0 auto; 
+}
+
 .dropdown {
     float: left;
     overflow: hidden;
@@ -31,7 +36,7 @@
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-    background-color: red;
+    background-color: #474747;
 }
 
 .dropdown-content {
