@@ -1,3 +1,12 @@
+body{
+    overflow:hidden;
+
+}
+
+/*.bkground{
+     background-image:url("../images/bkground.jpg");
+}*/
+
 .back{
     width:100%;
 }
@@ -5,9 +14,11 @@
 .contact{
     width:100%;
     background-image:url("../images/bkground.jpg");
-    text-align:center
+    background-repeat:repeat-x;
+    text-align:center;
     padding-top:10vh;
-    padding-bottom:10vh;
+    position:fixed;
+    bottom:0;    
 }
 
 .barrier{
@@ -16,14 +27,31 @@
 }
 
 .textbox{
-    margin-top:5vh;
     opacity:0.55;
-    background-color:grey;
+    background-color:black;
     width:60%;
     margin:auto;
     text-align:center;
-    padding-top:5vh;
-    padding-bottom:5vh;
+    padding-top:20vh;
+    padding-bottom:15vh;
     border-radius:10px;
-
+    position:relative;
+    top:-20vh;
 }
+
+#standard{
+    width:100%;
+    margin:auto;
+    color:white;
+    font-family:sans-serif;
+    position:relative;
+    z-index:8;
+    top:9vh;
+    font-size:25px;
+    line-height:5px;
+}
+
+#title{
+    font-size:55px;
+}
+
