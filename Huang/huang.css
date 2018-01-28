@@ -16,7 +16,7 @@ body{
     background-image:url("../images/bkground.jpg");
     background-repeat:repeat-x;
     text-align:center;
-    padding-top:10vh;
+    padding-top:12vh;
     position:fixed;
     bottom:0;    
 }
@@ -29,7 +29,7 @@ body{
 .textbox{
     opacity:0.55;
     background-color:black;
-    width:60%;
+    width:37%;
     margin:auto;
     text-align:center;
     padding-top:20vh;
@@ -37,6 +37,23 @@ body{
     border-radius:10px;
     position:relative;
     top:-20vh;
+    float:left;
+    margin-left:10vw;
+}
+
+.textbox1{
+    opacity:0.55;
+    background-color:black;
+    width:37%;
+    margin:auto;
+    text-align:center;
+    padding-top:20vh;
+    padding-bottom:15vh;
+    border-radius:10px;
+    position:relative;
+    top:-20vh;
+    float:right;
+    margin-right:10vw;
 }
 
 #standard{
