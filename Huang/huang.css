@@ -1,0 +1,29 @@
+.back{
+    width:100%;
+}
+
+.contact{
+    width:100%;
+    background-image:url("../images/bkground.jpg");
+    text-align:center
+    padding-top:10vh;
+    padding-bottom:10vh;
+}
+
+.barrier{
+    padding-top:3vh;
+    padding-bottom:3vh;
+}
+
+.textbox{
+    margin-top:5vh;
+    opacity:0.55;
+    background-color:grey;
+    width:60%;
+    margin:auto;
+    text-align:center;
+    padding-top:5vh;
+    padding-bottom:5vh;
+    border-radius:10px;
+
+}

@@ -12,6 +12,7 @@
       <link rel="stylesheet" type="text/css" href="css/reusable/header.css">
       <link rel="stylesheet" type="text/css" href="css/reusable/navigation.css">
       <link rel="stylesheet" type="text/css" href="css/reusable/spacers.css">
+      <link rel="stylesheet" type="text/css" href="Huang/huang.css">
       <title> Health Canada SRT Tutorials</title>
     </head>
 
@@ -21,34 +22,39 @@
       <a href="http://www.hc-sc.gc.ca/index-eng.php"><img class="healthCanadaHeader" src="images/hcExtended.png"></a>
     </div>
 
-    <div class="navigationContainer">
-      <ul class="navigation">
-        <li class = "border"><a href="HC Website.html">Home</a></li>
-        <li class="dropdown border">
-          <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Tutorials</a>
-          <div class="dropdown-content" id="myDropdown">
-            <a href="apv1.html">Autopopulate</a>
-            <a href="#home">Screening</a>
-            <a href="#home">Review</a>
-          <a href="#home">Issues</a>
-          <a href="#home">Data</a>
-          </div>
-        </li>
-        <li class="dropdown border">
-          <a href="javascript:void(0)" class="dropbtn" onclick="myFunction1()">Project</a>
-          <div class="dropdown-content" id="myDropdown1">
-            <a href="Overview.html">Overview</a>
-            <a href="History.html">History</a>
-            <a href="Tools.html">Tools</a>
-          </div>
-        </li>
-        <li class = "border"><a href="Team.html">Team</a></li>
-        <li class = "border"><a href="Contact_Us.html">Contact Us</a></li>
-      </ul>
+    <div class="navbar">
+
+      <a href="#home">Home</a>
+
+      <div class="dropdown">
+        <button class="dropbtn" onclick="drop1()">Tutorials</button>
+        <div class="dropdown-content" id="myDropdown1">
+          <a href="#">Yolo1</a>
+          <a href="#">Yolo2</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn" onclick="drop2()">Project</button>
+        <div class="dropdown-content" id="myDropdown2">
+          <a href="#">Yolo1</a>
+          <a href="#">Yolo2</a>
+        </div>
+      </div> 
+
+      <a href="#">Team</a>
+      <a href="#">Contact Us</a>
+
     </div>
 
-    <div>
-      <img src="images/bkground.jpg">
+<!--     <div>
+      <img src="images/bkground.jpg" class="back">
+    </div> -->
+
+    <div class="contact">
+      <div class="barrier"></div>
+      <div class="textbox">
+      </div>
     </div>
 
   </body>
