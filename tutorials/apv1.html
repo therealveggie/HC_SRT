@@ -5,90 +5,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Slab|Open+Sans+Condensed:300|Ubuntu" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="../css/style_z.css">
-<link rel="stylesheet" href="../css/navbar.css">
-<title>HC: Phase I Tutorials</title>
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Slab|Open+Sans+Condensed:300|Ubuntu" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="../css/tutorial.css">
+	<link rel="stylesheet" type="text/css" href="../css/reusable/navigation.css">
+	<link rel="stylesheet" type="text/css" href="../css/reusable/header.css">
+	<title>HC: Phase I Tutorials</title>
 </head>
 
 <body style="background-color:#f2f2f2;">
-<a href="http://www.hc-sc.gc.ca/index-eng.php"><center><img src="../images/hc.png" width="50%" height="50%"></a><br>
-<ul>
-  <li><a href="HC Website.html">Home</a></li>
-  <li><a href="#">Tutorials</a></li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Project</a>
-    <div class="dropdown-content" id="myDropdown">
-      <a href="Overview.html">Overview</a>
-      <a href="History.html">History</a>
-      <a href="Tools.html">Tools</a>
+    <div>
+      <a href="http://www.hc-sc.gc.ca/index-eng.php"><img class="healthCanadaHeader" src="../images/hcExtended.png"></a>
     </div>
-  </li>
-  <li><a href="Team.html">Team</a></li>
-  <li><a href="Contact_Us.html">Contact Us</a></li>
-</ul>
 
-<div class="sidenav">
-	<div class ="dropdownn">
-	  <a class="dropbtnn active">Autopopulate</a>
-		<div class="dropdown-contentt">
-			<a href="apv1.html">Video 1: First Login  </a>
-			<a href="apv2.html">Video 2: Opening Templates  </a>
-			<a href="apv3.html">Video 3: Saving Data with a Control Number </a>
-			<a href="apv4.html">Video 4: Loading Data and Using Overwrite and Force DSTS  </a>
-			<a href="apv5.html">Video 5: Designing a Template  </a>
-			<a href="apv6.html">Video 6: Managing User Accounts </a>
-			<a href="apv7.html">Video 7: Managing Fields </a>
-			<a href="apv8.html">Video 8: Find Submissions and Get Documents </a>
-			<a href="apv9.html">Video 9: Navigate Changes </a>
-			<a href="apv10.html">Video 10: Managing Changes </a>
-		</div>
-	</div>
-	<div class ="dropdownn">
-	  <a class="dropbtnn" href="#">Screening</a>
-		<div class="dropdown-contentt">
-			<a href="#">Video 1: </a>
-			<a href="#">Video 2: </a>
-			<a href="#">Video 3: </a>
-		</div>
-	</div>
-	<div class ="dropdownn">
-	  <a class="dropbtnn" href="#">Review</a>
-		<div class="dropdown-contentt">
-			<a href="#">Video 1: </a>
-			<a href="#">Video 2: </a>
-			<a href="#">Video 3: </a>
-		</div>
-	</div>
-	<div class ="dropdownn">
-	  <a class="dropbtnn" href="#">Issues</a>
-		<div class="dropdown-contentt">
-			<a href="#">Video 1: </a>
-			<a href="#">Video 2: </a>
-			<a href="#">Video 3: </a>
-		</div>
-	</div>
-	<div class ="dropdownn">
-	  <a class="dropbtnn" href="#">Data</a>
-		<div class="dropdown-contentt">
-			<a href="#">Video 1: </a>
-			<a href="#">Video 2: </a>
-			<a href="#">Video 3: </a>
-		</div>
-	</div>
-</div>
+    <div class="navbar">
+      <div class="position">
+        <a href="#home">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="drop1()">Tutorials</button>
+          <div class="dropdown-content" id="myDropdown1">
+            <a href="tutorials/apv1.html">Autopopulate</a>
+            <a href="#">Screening</a>
+            <a href="#">Review</a>
+            <a href="#">Issues</a>
+            <a href="#">Data</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="drop2()">Project</button>
+          <div class="dropdown-content" id="myDropdown2">
+            <a href="overview.html">Overview</a>
+            <a href="history.html">History</a>
+            <a href="tools.html">Tools</a>
+          </div>
+        </div> 
+        <a href="team.html">Team</a>
+        <a href="Contact_Us.html">Contact</a>
+      </div>
+    </div>
 
-<div>
-	<p class = "vidTitle">Video 1: First Login</p>
-	<!-- Tutorial 2 -->
-	<br>
-	<br>
-	<br>
-		<div class = "video">
-		<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,28;" WIDTH=1024 HEIGHT=792 PARAM NAME=movie VALUE="tutorials/Tutorial%201.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE="#FFFFFF"><param name="allowFullScreen" value="true" ><EMBED src="tutorials/Tutorial%201.swf" allowfullscreen="true" quality=high bgcolor="#FFFFFF" WIDTH=800 HEIGHT=624 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></OBJECT>
+	<div>
+		<!-- Tutorial 1 -->
+		<div class = "column1">
+			<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,28;" WIDTH=1024 HEIGHT=792 PARAM NAME=movie VALUE="tutorials/Tutorial%201.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE="#FFFFFF"><param name="allowFullScreen" value="true" ><EMBED src="tutorials/Tutorial%201.swf" allowfullscreen="true" quality=high bgcolor="#FFFFFF" WIDTH=800 HEIGHT=624 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></OBJECT>
 		</div>
-</div>
+		<div class="column2"></div>
+
+	</div>
 
 </body>
 </html>

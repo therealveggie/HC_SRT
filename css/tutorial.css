@@ -1,0 +1,20 @@
+/*Nothing supposed to be here!! */ 
+/*Restart all the styling again please */
+
+body {
+    margin: 0; 
+}
+
+.column1 {
+    float: left;
+    width: 50%;
+    background-color: blue; 
+    height: 400px;
+}
+
+.column2 {
+	float: right;
+	width: 50%;
+    background-color: pink;
+    height: 700px;
+}
