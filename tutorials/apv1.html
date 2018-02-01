@@ -6,10 +6,12 @@
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Slab|Open+Sans+Condensed:300|Ubuntu" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	
 	<link rel="stylesheet" href="../css/tutorial.css">
 	<link rel="stylesheet" type="text/css" href="../css/reusable/navigation.css">
 	<link rel="stylesheet" type="text/css" href="../css/reusable/header.css">
-  <link rel="stylesheet" type="text/css" href="../css/reusable/accordian.css">
+     <link rel="stylesheet" type="text/css" href="../css/reusable/accordian.css">
 	<title>HC: Phase I Tutorials</title>
 </head>
 
@@ -38,37 +40,48 @@
 	<div class="row">
 		<!-- Tutorial 1 -->
 		<div id="video" class = "column1">
-			<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,28;" WIDTH=1024 HEIGHT=792 PARAM NAME=movie VALUE="tutorials/Tutorial%201.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE="#FFFFFF"><param name="allowFullScreen" value="true" ><EMBED id="widthcheck" src="tutorials/Tutorial%201.swf" allowfullscreen="true" quality=high bgcolor="#FFFFFF" WIDTH=800 HEIGHT=624 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></OBJECT>
+			<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,28;" WIDTH=1024 HEIGHT=792 PARAM NAME=movie VALUE="tutorials/Tutorial%201.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE="#FFFFFF"><param name="allowFullScreen" value="true" ><PARAM NAME="SCALE" VALUE="default"><EMBED id="widthcheck" src="tutorials/Tutorial%201.swf" allowfullscreen="true" quality=high bgcolor="#FFFFFF" WIDTH=100% HEIGHT=100% TYPE="application/x-shockwave-flash" SCALE="default" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></OBJECT>
 		</div>
 		<div id="column2" class="column2">
-      <h2>Accordion with symbols</h2>
-      <p>In this example we have added a "plus" sign to each button. When the user clicks on the button, the "plus" sign is replaced with a "minus" sign.</p>
-      <button class="accordion">Section 1</button>
-      <div class="panel">
-        <div onclick="changeVideo(1)">Uno</div>
-        <div onclick="changeVideo(2)">Dos</div>
-        <div onclick="changeVideo(3)">Tres</div>
-        <div onclick="changeVideo(4)">Cuatro</div>
-        <div onclick="changeVideo(5)">Cinco</div>
-        <div onclick="changeVideo(6)">Seis</div>
-        <div onclick="changeVideo(7)">Siete</div>
-        <div onclick="changeVideo(8)">Ocho</div>
-        <div onclick="changeVideo(9)">Nueve</div>
-        <div onclick="changeVideo(10)">Diez</div>
-      </div>
+		
+		  <button class="accordion">Autopopulate</button>
+		  <div class="panel">
+			<div class="link" onclick="changeVideo(1)">First Login</div>
+			<div class="link" onclick="changeVideo(2)">Opening Templates</div>
+			<div class="link" onclick="changeVideo(3)">Saving Data with a Control Number</div>
+			<div class="link" onclick="changeVideo(4)">Loading Data with Overwrite and Force DSTS</div>
+			<div class="link" onclick="changeVideo(5)">Designing a Template</div>
+			<div class="link" onclick="changeVideo(6)">Managing User Accounts</div>
+			<div class="link" onclick="changeVideo(7)">Managing Fields</div>
+			<div class="link" onclick="changeVideo(8)">Find Submissions and Get Documents</div>
+			<div class="link" onclick="changeVideo(9)">Navigate Changes</div>
+			<div class="link" onclick="changeVideo(10)">Managing Changes</div>
+		  </div>
 
-      <button class="accordion">Section 2</button>
-      <div class="panel">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
+		  <button class="accordion">Screening</button>
+		  <div class="panel">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		  </div>
 
-      <button class="accordion">Section 3</button>
-      <div class="panel">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>  
-    </div>
-
+		  <button class="accordion">Review</button>
+		  <div class="panel">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		  </div>  
+		  
+		  <button class="accordion">Issues</button>
+		  <div class="panel">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		  </div>  
+		  
+		  <button class="accordion">Data</button>
+		  <div class="panel">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		  </div>  
+		</div>
 	</div>
+	<div class="filler"></div>
+
+	
   <script>
   var acc = document.getElementsByClassName("accordion");
   var i;
@@ -126,13 +139,13 @@ window.onclick = function(e) {
 
 function changeVideo(videonumber) {
   var videoList = ['filler', 
-    '<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,28;" WIDTH=1024 HEIGHT=792 PARAM NAME=movie VALUE="tutorials/Tutorial%201.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE="#FFFFFF"><param name="allowFullScreen" value="true" ><EMBED id="widthcheck" src="tutorials/Tutorial%201.swf" allowfullscreen="true" quality=high bgcolor="#FFFFFF" WIDTH=800 HEIGHT=624 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></OBJECT>', 
+    '<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,28;" WIDTH=1024 HEIGHT=792 PARAM NAME=movie VALUE="tutorials/Tutorial%201.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE="#FFFFFF"><param name="allowFullScreen" value="true" ><PARAM NAME="SCALE" VALUE="default"><EMBED id="widthcheck" src="tutorials/Tutorial%201.swf" allowfullscreen="true" quality=high bgcolor="#FFFFFF" WIDTH=100% HEIGHT=100% TYPE="application/x-shockwave-flash" SCALE="default" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></OBJECT>', 
     
     '<OBJECT codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,28;" WIDTH=1024 HEIGHT=792><PARAM NAME=movie VALUE="tutorials/2.%20Opening%20Templates%20V2.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE="#FFFFFF"><param name="allowFullScreen" value="true" ><EMBED src="tutorials/2.%20Opening%20Templates%20V2.swf" allowfullscreen="true" quality=high bgcolor="#FFFFFF"  WIDTH=1024 HEIGHT=792 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></OBJECT>', 
 
     '<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,28;" WIDTH=1024 HEIGHT=792><PARAM NAME=movie VALUE="tutorials/3.%20Saving%20Data%20with%20a%20Control%20Number%20V3.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE="#FFFFFF"><param name="allowFullScreen" value="true" ><EMBED src="tutorials/3.%20Saving%20Data%20with%20a%20Control%20Number%20V3.swf" allowfullscreen="true" quality=high bgcolor="#FFFFFF"  WIDTH=1024 HEIGHT=792 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></OBJECT>', 
     
-    '<div classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,28;" WIDTH=1024 HEIGHT=792><PARAM NAME=movie VALUE="tutorials/4.%20Loading%20Data%20and%20Using%20Overwrite%20and%20Force%20DSTS.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE="#FFFFFF"><param name="allowFullScreen" value="true" ><EMBED src="tutorials/4.%20Loading%20Data%20and%20Using%20Overwrite%20and%20Force%20DSTS.swf" allowfullscreen="true" quality=high bgcolor="#FFFFFF"  WIDTH=1024 HEIGHT=792 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></div>', 
+    '<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,28;" WIDTH=1024 HEIGHT=792><PARAM NAME=movie VALUE="tutorials/4.%20Loading%20Data%20and%20Using%20Overwrite%20and%20Force%20DSTS.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE="#FFFFFF"><param name="allowFullScreen" value="true" ><EMBED src="tutorials/4.%20Loading%20Data%20and%20Using%20Overwrite%20and%20Force%20DSTS.swf" allowfullscreen="true" quality=high bgcolor="#FFFFFF"  WIDTH=1024 HEIGHT=792 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></OBJECT>', 
     
     '<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,28;" WIDTH=1024 HEIGHT=792><PARAM NAME=movie VALUE="tutorials/5.%20Designing%20a%20Template%20V3.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE="#FFFFFF"><param name="allowFullScreen" value="true" ><EMBED src="tutorials/5.%20Designing%20a%20Template%20V3.swf" allowfullscreen="true" quality=high bgcolor="#FFFFFF"  WIDTH=1024 HEIGHT=792 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></OBJECT>',
     

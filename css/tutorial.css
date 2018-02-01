@@ -5,25 +5,45 @@ body {
     margin: 0; 
 }
 
+div.link {
+	display: block;
+	cursor: pointer;
+	background-color: #eee;
+	padding: 20px 20px 20px 50px; 
+	font-size: 18px;
+	font-family: 'Nunito'; 
+}
+
+div.link:hover {
+	background-color:#ddd;
+}
+
 .row {
 	width: 100%;
-	height: 900px;
+	height: 620px;
 }
 .column1 {
     float: left;
-    width: 50%;
+    width: 70%;
     background-color: blue; 
-    height: 400px;
+    height: 620px;
 }
 
 .column2 {
 	float: right;
-	width: 50%;
-    background-color: pink;
-    height: 700px;
+	width: 30%;
+    background-color: orange;
+    height: 620px;
+	overflow-y: scroll;
 }
 
 #video {
-    transform: scale(1);
-    overflow: scroll; 
+    /*transform: scale(1);
+    overflow: scroll; */
+}
+
+.filler {
+	background-color:#333;
+	width:100%;
+	height:47px; 
 }

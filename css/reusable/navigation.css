@@ -16,6 +16,8 @@ body {
     overflow: hidden;
     background-color: var(--jet);
     font-family: Arial; /*font-family: 'Nunito'; */
+    background-color: #333;
+    font-family: 'Nunito'; /*font-family: 'Nunito'; */
 }
 
 .navbar a {
