@@ -1,6 +1,14 @@
+:root{
+    jet         : #333333;
+    seablue     : #016295;
+    silver      : #BFBFBF;
+    platinum    : #E8E8E8;
+    snow        : #FCF7F8;
+}
+
 body {
     margin: 0; 
-    background-color:#FCF7F8;
+    background-color: var(snow);
 }
 
 .navbar {
