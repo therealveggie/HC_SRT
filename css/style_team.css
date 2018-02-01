@@ -33,7 +33,12 @@ h2 {
 }
 /* Clear floats after the columns */
 .row:after{
-
+    clear: both;
+    content: "";
+    display: table;
+    margin: 0 auto; 
+    clear: both; 
+    flex-direction: column;
 }
 
 .bar {
