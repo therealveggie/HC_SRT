@@ -7,7 +7,7 @@ body {
     z-index: 9001;
     overflow: hidden;
     background-color: #333;
-    font-family: Arial; /*font-family: 'Nunito'; */
+    font-family: 'Nunito'; /*font-family: 'Nunito'; */
 }
 
 .navbar a {
