@@ -10,6 +10,8 @@ div.link {
 	cursor: pointer;
 	background-color: #eee;
 	padding: 20px; 
+	font-size: 18px;
+	font-family: 'Nunito'; 
 }
 
 div.link:hover {
@@ -32,6 +34,7 @@ div.link:hover {
 	width: 50%;
     background-color: orange;
     height: 700px;
+	overflow-y: scroll;
 }
 
 #video {
