@@ -1,8 +1,13 @@
+body {
+    margin: 0; 
+    background-color:#FCF7F8;
+}
+
 .navbar {
     z-index: 9001;
     overflow: hidden;
     background-color: #333;
-    font-family: Arial;
+    font-family: Arial; /*font-family: 'Nunito'; */
 }
 
 .navbar a {
