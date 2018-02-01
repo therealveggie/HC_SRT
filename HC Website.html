@@ -21,17 +21,8 @@
 
     <div class="navbar">
       <div class="position">
-        <a href="#home">Home</a>
-        <div class="dropdown">
-          <button class="dropbtn" onclick="drop1()">Tutorials</button>
-          <div class="dropdown-content" id="myDropdown1">
-            <a href="tutorials/apv1.html">Autopopulate</a>
-            <a href="#">Screening</a>
-            <a href="#">Review</a>
-            <a href="#">Issues</a>
-            <a href="#">Data</a>
-          </div>
-        </div>
+        <a href="HC Website.html">Home</a>
+        <a href="tutorials/apv1.html">Tutorials</a>
         <div class="dropdown">
           <button class="dropbtn" onclick="drop2()">Project</button>
           <div class="dropdown-content" id="myDropdown2">
@@ -86,23 +77,13 @@
   </div>
 
     <script>
-    function drop1() {
-      document.getElementById("myDropdown1").classList.toggle("show");
-      document.getElementById("myDropdown2").classList.remove("show");
-    }
-
     function drop2() {
-      document.getElementById("myDropdown1").classList.remove("show");
       document.getElementById("myDropdown2").classList.toggle("show");
     }
 
     // Close the dropdown if the user clicks outside of it; also modified for if anyone clicks outside of modal window
     window.onclick = function(e) {
         if (!e.target.matches('.dropbtn')) {
-          var myDropdown = document.getElementById("myDropdown1");
-            if (myDropdown.classList.contains('show')) {
-              myDropdown.classList.remove('show');
-            }
           var myDropdown = document.getElementById("myDropdown2");
             if (myDropdown.classList.contains('show')) {
               myDropdown.classList.remove('show');
