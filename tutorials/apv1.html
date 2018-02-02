@@ -38,10 +38,15 @@
     </div>
 
 	<div class="row">
-		<!-- Tutorial 1 -->
+		<!-- Tutorials -->
 		<div id="video" class = "column1">
-			<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,28;" WIDTH=1024 HEIGHT=792 PARAM NAME=movie VALUE="tutorials/Tutorial%201.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE="#FFFFFF"><param name="allowFullScreen" value="true" ><PARAM NAME="SCALE" VALUE="default"><EMBED id="widthcheck" src="tutorials/Tutorial%201.swf" allowfullscreen="true" quality=high bgcolor="#FFFFFF" WIDTH=100% HEIGHT=100% TYPE="application/x-shockwave-flash" SCALE="default" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></OBJECT>
+			<div id="container">
+				<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,28;" WIDTH=1024 HEIGHT=792 PARAM NAME=movie VALUE="tutorials/Tutorial%201.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE="#FFFFFF"><param name="allowFullScreen" value="true" ><PARAM NAME="SCALE" VALUE="default"><EMBED id="widthcheck" src="tutorials/Tutorial%201.swf" allowfullscreen="true" quality=high bgcolor="#FFFFFF" WIDTH=100% HEIGHT=100% TYPE="application/x-shockwave-flash" SCALE="default" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></OBJECT>
+			</div>
 		</div>
+		
+		<div class="verticalfiller"></div>
+		
 		<div id="column2" class="column2">
 		
 		  <button class="accordion">Autopopulate</button>
@@ -159,7 +164,7 @@ function changeVideo(videonumber) {
     
     '<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,28;" WIDTH=1024 HEIGHT=792><PARAM NAME=movie VALUE="tutorials/10.%20Managing%20Changes.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE="#FFFFFF"><param name="allowFullScreen" value="true" ><EMBED src="tutorials/10.%20Managing%20Changes.swf" allowfullscreen="true" quality=high bgcolor="#FFFFFF"  WIDTH=1024 HEIGHT=792 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></OBJECT>'];
   
-  document.getElementById("video").innerHTML = videoList[videonumber];
+  document.getElementById("container").innerHTML = videoList[videonumber];
 }
 
   /*transform: scale(0.6);*/

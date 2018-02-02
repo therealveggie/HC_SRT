@@ -1,3 +1,11 @@
+:root{
+    --jet         : #333333;
+    --seablue     : #016295;
+    --silver      : #BFBFBF;
+    --platinum    : #E8E8E8;
+    --snow        : #FCF7F8;
+}
+
 .accordion {
     background-color: #eee;
     color: #444;
@@ -29,7 +37,7 @@
 }
 
 .panel {
-    padding: 0px;
+	width: 100%;
     background-color: white;
     max-height: 0;
     overflow: hidden;
