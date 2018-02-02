@@ -16,10 +16,14 @@ h2 {
 .column {
     width: 30%;
     float: left; 
-    padding: 10px;
-
+    
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
     background-color: var(--silver);
-    margin: 1.66%; 
+    margin-top: 1.66%;
+    margin-right: 1.66%;
+    margin-left: 1.66% ;
     border-radius: 3px;
     
 }
@@ -39,6 +43,29 @@ h2 {
     margin: 0 auto; 
     clear: both; 
     flex-direction: column;
+}
+
+.hidden_row:after{
+    clear: both;
+    content: "";
+    display: table;
+    margin: 0 auto; 
+    clear: both; 
+    flex-direction: column;
+}
+
+.hidden_column {
+    width: 30%;
+    float: left;    
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    background-color: var(--silver);
+    margin-bottom: 1.66%;
+    margin-right: 1.66%;
+    margin-left: 1.66% ;
+    border-radius: 3px;
+    
 }
 
 .bar {
@@ -75,7 +102,15 @@ h2 {
 	height:47px; 
 }
 
-
-
+.imgdiv{
+    width: 100%;
+    text-align: center;
+    vertical-align: bottom;
+}
+.dropimg{
+    margin: auto;
+    width: 40px;
+    height: 40px;
+}
 
 
