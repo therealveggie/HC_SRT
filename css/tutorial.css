@@ -30,15 +30,15 @@ div.link:hover {
 }
 .column1 {
     float: left;
-    width: 52%;
+    width: 42%;
     background-color: var(--silver); 
     height: 620px;
 }
 
 #container {
 	float: right; 
-	width: 800px;
 	height: 620px;
+	width: 100%;
 }
 
 .column2 {
@@ -60,4 +60,53 @@ div.link:hover {
 	float: right; 
 	height: 620px; 
 	background-color: var(--silver);
+}
+
+.verticalfiller2 {
+	width: 10%;
+	float: left;
+	height: 620px;
+	background-color: var(--silver); 
+}
+
+@media only screen and (max-width: 1400px) {
+	
+	.verticalfiller {
+		width: 4%;
+		float: right; 
+		height: 620px; 
+		background-color: var(--silver);
+	}
+
+	.verticalfiller2 {
+		width: 4%;
+		float: left;
+		height: 620px;
+		background-color: blue; 
+	}
+
+	#container {
+		float: right; 
+		height: 620px;
+		width: 100%;
+	}
+	
+	.column1 {
+		float: left;
+		width: 58%;
+		background-color: var(--silver); 
+		height: 620px;
+	}
+	
+	.column2 {
+		width: 34%;
+		float: right; 
+		background-color: #eee;
+		height: 620px;
+		overflow-y: scroll;
+	}
+	
+	.row {
+		height: 620px;
+	}
 }
