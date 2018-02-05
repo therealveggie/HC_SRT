@@ -1,6 +1,5 @@
 body{
-    overflow:hidden;
-
+	margin: 0;
 }
 
 /*.bkground{
@@ -71,3 +70,9 @@ body{
     font-size:55px;
 }
 
+.filler {
+	background-color: var(--jet);
+	width:100%;
+	height:47px; 
+	margin-top: -4px; 
+}
