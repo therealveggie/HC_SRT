@@ -6,37 +6,42 @@
 	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Slab|Lato|Open+Sans+Condensed:300|Ubuntu" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	
 	<link rel="stylesheet" href="css/reset_timeline.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style_timeline.css"> <!-- Resource style -->
 	<link rel="stylesheet" href="css/w3_timeline.css">
+    <link rel="stylesheet" type="text/css" href="css/reusable/header.css">
+    <link rel="stylesheet" type="text/css" href="css/reusable/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/reusable/spacers.css">
+	
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 	<title>SRT Timeline</title>
 </head>
 <body>
-<a href="#home"><center><img src="img/hc.png" width="50%" height="50%" style="margin-bottom: 0;"></a><br>
-<ul class="nav">
-  <li class = "links"><a href="HC Website.html">Home</a></li>
-  <li class="dropdown links">
-    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Tutorials</a>
-    <div class="dropdown-content" id="myDropdown">
-      <a href="apv1.html">Autopopulate</a>
-      <a href="#home">Screening</a>
-      <a href="#home">Review</a>
-	  <a href="#home">Issues</a>
-	  <a href="#home">Data</a>
+
+    <div>
+      <a href="http://www.hc-sc.gc.ca/index-eng.php"><img class="healthCanadaHeader" src="images/hcExtended.png"></a>
     </div>
-  </li>
-  <li class="dropdown links">
-    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction1()">Project</a>
-    <div class="dropdown-content" id="myDropdown1">
-      <a href="Overview.html">Overview</a>
-      <a href="History.html">History</a>
-      <a href="Tools.html">Tools</a>
+
+    <div class="navbar">
+      <div class="position">
+        <a href="HC Website.html">Home</a>
+        <a href="tutorials/apv1.html">Tutorials</a>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="drop2()">Project</button>
+          <div class="dropdown-content" id="myDropdown2">
+            <a href="overview.html">Overview</a>
+            <a href="history.html">History</a>
+            <a href="tools.html">Tools</a>
+          </div>
+        </div> 
+        <a href="team.html">Team</a>
+        <a href="Contact_Us.html">Contact</a>
+      </div>
     </div>
-  </li>
-  <li class = "links"><a href="Team.html">Team</a></li>
-  <li class = "links"><a href="Contact_Us.html">Contact Us</a></li>
-</ul>
+
+	<center>
 <br><br>
 <div class="bg" style="background-color: #938581;">
 <br><br>
@@ -202,27 +207,20 @@
 <script>
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-	document.getElementById("myDropdown1").classList.remove("show");
-}
-function myFunction1() {
-    document.getElementById("myDropdown1").classList.toggle("show");
-	document.getElementById("myDropdown").classList.remove("show");
-}
-
-// Close the dropdown if the user clicks outside of it; also modified for if anyone clicks outside of modal window
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    for (var d = 0; d < dropdowns.length; d++) {
-      var openDropdown = dropdowns[d];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
+    function drop2() {
+      document.getElementById("myDropdown2").classList.toggle("show");
     }
-  }
-}
+
+    // Close the dropdown if the user clicks outside of it; also modified for if anyone clicks outside of modal window
+    window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown2");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+        }
+    }
+	
 function myAccFunc1() {
     var x = document.getElementById("demoAcc1");
     if (x.className.indexOf("w3-show") == -1) {
@@ -235,5 +233,6 @@ function myAccFunc1() {
     }
 }
 </script>
+</center>
 </body>
 </html>
