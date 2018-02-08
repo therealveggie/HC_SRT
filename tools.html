@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Slab|Lato|Open+Sans+Condensed:300|Ubuntu" rel="stylesheet">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="css/style_tools.css">
-<link rel="stylesheet" href="css/bootstrap.min.tool.css">
-<link rel="stylesheet" href="css/scrolling.css">
-<link rel="stylesheet" href="css/w3.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Slab|Lato|Open+Sans+Condensed:300|Ubuntu" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/style_tools.css">
+	<link rel="stylesheet" href="css/bootstrap.min.tool.css">
+	<link rel="stylesheet" href="css/scrolling.css">
+	<link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/reusable/header.css">
+    <link rel="stylesheet" type="text/css" href="css/reusable/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/reusable/spacers.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<link rel="stylesheet" type="text/css" href="www.justinaguilar.com/animations/css/animations.css" />
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<title>Health Canada SRT Tutorials</title>
+	<link rel="stylesheet" type="text/css" href="www.justinaguilar.com/animations/css/animations.css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	
+	<title>Health Canada SRT Tutorials</title>
 </head>
+
 <body style="background-color:#f2f2f2;">
-<a href="http://www.hc-sc.gc.ca/index-eng.php"><center><img src="images/hc.png" width="50%" height="50%" style="margin-bottom: 0;"></a><br>
-
-<ul class="nav">
-  <li class = "links"><a href="HC Website.html">Home</a></li>
-  <li class="dropdown links">
-    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Tutorials</a>
-    <div class="dropdown-content" id="myDropdown">
-      <a href="apv1.html">Autopopulate</a>
-      <a href="#home">Screening</a>
-      <a href="#home">Review</a>
-	  <a href="#home">Issues</a>
-	  <a href="#home">Data</a>
+    <div>
+      <a href="http://www.hc-sc.gc.ca/index-eng.php"><img class="healthCanadaHeader" src="images/hcExtended.png"></a>
     </div>
-  </li>
-  <li class="dropdown links">
-    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction1()">Project</a>
-    <div class="dropdown-content" id="myDropdown1">
-      <a href="Overview.html">Overview</a>
-      <a href="History.html">History</a>
-      <a href="Tools.html">Tools</a>
-    </div>
-  </li>
-  <li class = "links"><a href="Team.html">Team</a></li>
-  <li class = "links"><a href="Contact_Us.html">Contact Us</a></li>
-</ul>
 
+    <div class="navbar">
+      <div class="position">
+        <a href="HC Website.html">Home</a>
+        <a href="tutorials/apv1.html">Tutorials</a>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="drop2()">Project</button>
+          <div class="dropdown-content" id="myDropdown2">
+            <a href="overview.html">Overview</a>
+            <a href="history.html">History</a>
+            <a href="tools.html">Tools</a>
+          </div>
+        </div> 
+        <a href="team.html">Team</a>
+        <a href="Contact_Us.html">Contact</a>
+      </div>
+    </div>
+	
 <nav class="sidenav">
    <div class="w3-accordion">
 		<a class = "w3-green">
@@ -437,27 +439,19 @@ function myAccFunc() {
 </script>
 
 <script>
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-	document.getElementById("myDropdown1").classList.remove("show");
-}
-function myFunction1() {
-    document.getElementById("myDropdown1").classList.toggle("show");
-	document.getElementById("myDropdown").classList.remove("show");
-}
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    for (var d = 0; d < dropdowns.length; d++) {
-      var openDropdown = dropdowns[d];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
+    function drop2() {
+      document.getElementById("myDropdown2").classList.toggle("show");
     }
-  }
-}
+
+    // Close the dropdown if the user clicks outside of it; also modified for if anyone clicks outside of modal window
+    window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown2");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+        }
+    }
 </script>
 
 <!-- <script>   

@@ -8,10 +8,10 @@
     --snow        : #FCF7F8;
 }
 
-body {
-    margin: 0; 
-}
-
+html,body {
+    height:100%;
+    margin:0;
+ }
 div.link {
 	display: block;
 	cursor: pointer;
@@ -25,28 +25,32 @@ div.link:hover {
 	background-color:#ddd;
 }
 
-.row {
-	height: 620px;
-}
-.column1 {
-    float: left;
-    width: 42%;
-    background-color: var(--silver); 
-    height: 620px;
-}
-
 #container {
 	float: right; 
 	height: 620px;
 	width: 100%;
 }
 
+video {
+	object-fit: fill; 
+}
+
 .column2 {
-	width: 38%;
+	width: 32%;
 	float: right; 
     background-color: #eee;
     height: 620px;
 	overflow-y: scroll;
+}
+
+.row {
+	height: 620px;
+}
+.column1 {
+    float: left;
+    width: 48%;
+    background-color: var(--silver); 
+    height: 620px;
 }
 
 .filler {
@@ -69,7 +73,13 @@ div.link:hover {
 	background-color: var(--silver); 
 }
 
-@media only screen and (max-width: 1400px) {
+#videoHolder {
+	height: 1000px;
+	width: 1000px; 
+	background-color: pink; 
+}
+
+@media only screen and (max-width: 1750px) {
 	
 	.verticalfiller {
 		width: 4%;
@@ -82,9 +92,9 @@ div.link:hover {
 		width: 4%;
 		float: left;
 		height: 620px;
-		background-color: blue; 
+		background-color: var(--silver); 
 	}
-
+	
 	#container {
 		float: right; 
 		height: 620px;
@@ -93,13 +103,13 @@ div.link:hover {
 	
 	.column1 {
 		float: left;
-		width: 58%;
+		width: 54%;
 		background-color: var(--silver); 
 		height: 620px;
 	}
-	
+
 	.column2 {
-		width: 34%;
+		width: 38%;
 		float: right; 
 		background-color: #eee;
 		height: 620px;
@@ -108,5 +118,215 @@ div.link:hover {
 	
 	.row {
 		height: 620px;
+	}
+}
+
+@media only screen and (max-width: 1430px) {
+	
+	.verticalfiller {
+		width: 2%;
+		float: right; 
+		height: 550px; 
+		background-color: var(--silver);
+	}
+
+	.verticalfiller2 {
+		width: 2%;
+		float: left;
+		height: 550px;
+		background-color: var(--silver); 
+	}
+
+	#container {
+		float: right; 
+		height: 550px;
+		width: 100%;
+	}
+	
+	.column1 {
+		float: left;
+		width: 64%;
+		background-color: var(--silver); 
+		height: 550px;
+	}
+	
+	.column2 {
+		width: 32%;
+		float: right; 
+		background-color: #eee;
+		height: 550px;
+		overflow-y: scroll;
+	}
+	
+	.row {
+		height: 550px;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	
+	.verticalfiller {
+		width: 0%;
+		float: right; 
+		height: 550px; 
+		background-color: var(--silver);
+	}
+
+	.verticalfiller2 {
+		width: 0%;
+		float: left;
+		height: 550px;
+		background-color: blue; 
+	}
+
+	#container {
+		float: right; 
+		height: 550px;
+		width: 100%;
+	}
+	
+	.column1 {
+		float: left;
+		width: 66%;
+		background-color: var(--silver); 
+		height: 550px;
+	}
+	
+	.column2 {
+		width: 34%;
+		float: right; 
+		background-color: #eee;
+		height: 550px;
+		overflow-y: scroll;
+	}
+	
+	.row {
+		height: 550px;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	
+	.verticalfiller {
+		width: 0%;
+		float: right; 
+		height: 490px; 
+		background-color: var(--silver);
+	}
+
+	.verticalfiller2 {
+		width: 0%;
+		float: left;
+		height: 490px;
+		background-color: blue; 
+	}
+
+	#container {
+		float: right; 
+		height: 490px;
+		width: 100%;
+	}
+	
+	.column1 {
+		float: left;
+		width: 70%;
+		background-color: var(--silver); 
+		height: 490px;
+	}
+	
+	.column2 {
+		width: 30%;
+		float: right; 
+		background-color: #eee;
+		height: 490px;
+		overflow-y: scroll;
+	}
+	
+	.row {
+		height: 490px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	
+	.verticalfiller {
+		width: 0%;
+		float: right; 
+		height: 490px; 
+		background-color: var(--silver);
+	}
+
+	.verticalfiller2 {
+		width: 0%;
+		float: left;
+		height: 490px;
+		background-color: blue; 
+	}
+
+	#container {
+		float: right; 
+		height: 490px;
+		width: 100%;
+	}
+	
+	.column1 {
+		float: left;
+		width: 100%;
+		background-color: var(--silver); 
+		height: 490px;
+	}
+	
+	.column2 {
+		width: 100%;
+		float: right; 
+		background-color: #eee;
+		height: 490px;
+		overflow-y: scroll;
+	}
+	
+	.row {
+		height: 490px;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	
+	.verticalfiller {
+		width: 0%;
+		float: right; 
+		height: 350px; 
+		background-color: var(--silver);
+	}
+
+	.verticalfiller2 {
+		width: 0%;
+		float: left;
+		height: 350px;
+		background-color: blue; 
+	}
+
+	#container {
+		float: right; 
+		height: 350px;
+		width: 100%;
+	}
+	
+	.column1 {
+		float: left;
+		width: 100%;
+		background-color: var(--silver); 
+		height: 350px;
+	}
+	
+	.column2 {
+		width: 100%;
+		float: right; 
+		background-color: #eee;
+		height: 350px;
+		overflow-y: scroll;
+	}
+	
+	.row {
+		height: 350px;
 	}
 }

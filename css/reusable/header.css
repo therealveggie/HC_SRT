@@ -1,7 +1,8 @@
 .healthCanadaHeader {
 	display: block;
 	margin: auto; 
-	height: auto;
-	max-width: 100%;
+	height: 124px; 
+	width: 100%; 
+	object-fit: none;
 }
 
