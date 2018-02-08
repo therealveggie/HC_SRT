@@ -11,7 +11,7 @@
 html,body {
     height:100%;
     margin:0;
-	background-color: var(--snow); 
+	background-color: var(--seablue); 
  }
  
 div.link {
@@ -56,11 +56,10 @@ video {
 }
 
 .filler {
-	background-color: var(--seablue);
-	width:90%;
-	margin: 50px auto; 
-	height: 3px;
-	border-radius: 2px; 
+	background-color: var(--jet);
+	width:100%;
+	height:47px; 
+	margin-top: -4px; 
 }
 
 .verticalfiller {
@@ -87,7 +86,7 @@ video {
 
 .bottomContainer {
 	margin: auto;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 	width: 100%;
 	height: 5px;
 	background-color: var(--silver);
