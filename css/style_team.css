@@ -8,8 +8,9 @@ body{
 
 h1 {
   text-align: center; 
+  vertical-align:center;
   font-family: 'Raleway', sans-serif;
-  color: #191919;
+  color: var(--seablue);
 }
 
 /* Create three equal columns that floats next to each other */
@@ -59,7 +60,7 @@ h1 {
     padding-left: 10px;
     padding-bottom: 10px;
     padding-right: 10px;
-    background-color: var(--silver);
+    background-color: var(--platinum);
     margin-bottom: 1.66%;
     margin-right: 1.66%;
     margin-left: 1.66% ;
@@ -70,7 +71,7 @@ h1 {
 .bar {
     width: 90%;
     height: 3px;
-    background-color: #191919;
+    background-color: var(--seablue);
     border-radius: 5px; 
     margin: 0 auto; 
 }
