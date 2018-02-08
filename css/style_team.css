@@ -6,9 +6,9 @@ body{
     height: 100%
 }
 
-h2 {
+h1 {
   text-align: center; 
-  font-family: Arial;
+  font-family: 'Raleway', sans-serif;
   color: #191919;
 }
 
@@ -17,10 +17,9 @@ h2 {
     width: 30%;
     float: left; 
     
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-right: 10px;
-    background-color: var(--silver);
+    padding: 10px;
+    
+    background-color: var(--platinum);
     margin-top: 1.66%;
     margin-right: 1.66%;
     margin-left: 1.66% ;

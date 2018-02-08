@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
 <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
 <script src="js/team.js" type="text/javascript"></script>
@@ -41,17 +42,17 @@
 	<div class="filler"></div> 
 	
     <div class="row">
-      <div class="column" id ="dev">
-        <h2>Developers</h2>
+      <div class="column" >
+        <h1>Developers</h1>
         <div class="bar"></div>
-        <p class="description" >
+        <p class="description" id ="dev">
         	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor eget nunc eget facilisis. Curabitur sed gravida lectus. Donec egestas tempor malesuada. Quisque vitae nisl varius, semper risus at, feugiat odio.
         </p>
 		<div class ="imgdiv">
 			<img class="dropimg" id = "dev_drop" src="images/DownArrow.png">
 		</div>
 		<div id="hidden_dev">
-			<p class="description" >
+			<p class="hiddendescription" >
 				<p class="member"><b>Project Manager:</b> Martin Houle</p>
 				<p class="member"><b>Developer:</b> Wayne Qu</p>
 				<p class="member">Andrew Xing</p>
@@ -63,17 +64,17 @@
 		</div>
 	  </div>
 		
-      <div class="column" id ="stc">
-        <h2>Steering Committee</h2>
+      <div class="column" >
+        <h1>Steering Committee</h1>
         <div class="bar"></div>
-        <p class="description">
+        <p class="description" id ="stc">
         	Nunc risus erat, viverra in dapibus sed, sagittis ut velit. Aliquam nisl ipsum, placerat vel felis nec, mattis consequat turpis. Aenean et porta tellus. Cras sagittis, justo at venenatis pellentesque, arcu sem elementum enim, eu finibus justo diam vitae ex. Pellentesque interdum feugiat lorem at aliquam.
         </p>
         <div class ="imgdiv">
 			<img class="dropimg" id = "stc_drop" src="images/DownArrow.png">
 		</div>
 		<div id="hidden_stc">
-			<p class="description">
+			<p class="hiddendescription">
 				<p class="member"><b>temp moustache man:</b> Dr.Eggman</p>
 				<p class="member"><b>spiky hair:</b> knukles</p>
 				<p class="member">shadow</p>
@@ -84,17 +85,17 @@
 			</p>
 		  </div>
       </div>
-      <div class="column" id ="sme">
-        <h2>SME Team</h2>
+      <div class="column" >
+        <h1>SME Team</h1>
         <div class="bar"></div>
-        <p class="description">
+        <p class="description" id ="sme">
         	Duis est sapien, venenatis vitae sapien eu, tincidunt molestie metus. Quisque pharetra eros tincidunt ante iaculis vulputate. Vestibulum ullamcorper orci nec mattis faucibus. Mauris imperdiet, justo eu posuere rutrum, augue lorem sollicitudin urna, ut viverra est risus gravida eros.
         </p>
         <div class ="imgdiv">
 			<img class="dropimg" id = "sme_drop" src="images/DownArrow.png">
 		</div>
 		<div id="hidden_sme">
-			<p class="description">
+			<p class="hiddendescription">
 				<p class="member"><b>temp:</b> theveggie</p>
 				<p class="member"><b>temp2:</b> bobyaaa</p>
 				<p class="member">Kipply</p>
@@ -107,18 +108,6 @@
       </div>
     </div>
 
-	<!--
-    <div class="hidden_row">
-      <div class="hidden_column" 
-        
-	  </div>
-		
-      <div class="hidden_column" 
-
-      <div class="hidden_column" 
-
-    </div>
--->
   <script>
     function drop2() {
       document.getElementById("myDropdown2").classList.toggle("show");
