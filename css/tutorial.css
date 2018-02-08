@@ -11,7 +11,9 @@
 html,body {
     height:100%;
     margin:0;
+	background-color: var(--snow); 
  }
+ 
 div.link {
 	display: block;
 	cursor: pointer;
@@ -35,6 +37,16 @@ video {
 	object-fit: fill; 
 }
 
+.row {
+	height: 620px;
+}
+
+.column1 {
+    float: left;
+    width: 48%;
+    background-color: var(--silver); 
+    height: 620px;
+}
 .column2 {
 	width: 32%;
 	float: right; 
@@ -43,34 +55,42 @@ video {
 	overflow-y: scroll;
 }
 
-.row {
-	height: 620px;
-}
-.column1 {
-    float: left;
-    width: 48%;
-    background-color: var(--silver); 
-    height: 620px;
-}
-
 .filler {
-	background-color:#333;
-	width:100%;
-	height:47px; 
+	background-color: var(--seablue);
+	width:90%;
+	margin: 50px auto; 
+	height: 3px;
+	border-radius: 2px; 
 }
 
 .verticalfiller {
 	width: 10%;
 	float: right; 
 	height: 620px; 
-	background-color: var(--silver);
+	background-color: var(--snow);
 }
 
 .verticalfiller2 {
 	width: 10%;
 	float: left;
 	height: 620px;
-	background-color: var(--silver); 
+	background-color: var(--snow); 
+}
+
+.topContainer {
+	margin: auto;
+	margin-top: 50px; 
+	width: 80%;
+	height: 20px;
+	background-color: var(--seablue); 
+}
+
+.bottomContainer {
+	margin: auto;
+	margin-bottom: 20px;
+	width: 80%;
+	height: 5px;
+	background-color: var(--silver);
 }
 
 #videoHolder {
@@ -85,14 +105,14 @@ video {
 		width: 4%;
 		float: right; 
 		height: 620px; 
-		background-color: var(--silver);
+		background-color: var(--snow);
 	}
 
 	.verticalfiller2 {
 		width: 4%;
 		float: left;
 		height: 620px;
-		background-color: var(--silver); 
+		background-color: var(--snow); 
 	}
 	
 	#container {
@@ -127,14 +147,14 @@ video {
 		width: 2%;
 		float: right; 
 		height: 550px; 
-		background-color: var(--silver);
+		background-color: var(--snow);
 	}
 
 	.verticalfiller2 {
 		width: 2%;
 		float: left;
 		height: 550px;
-		background-color: var(--silver); 
+		background-color: var(--snow); 
 	}
 
 	#container {
@@ -169,14 +189,14 @@ video {
 		width: 0%;
 		float: right; 
 		height: 550px; 
-		background-color: var(--silver);
+		background-color: var(--snow);
 	}
 
 	.verticalfiller2 {
 		width: 0%;
 		float: left;
 		height: 550px;
-		background-color: blue; 
+		background-color: var(--snow); 
 	}
 
 	#container {
