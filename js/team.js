@@ -10,23 +10,25 @@ $(document).ready(function() {
 	$('#hidden_stc').slideUp();
 
 	$('#dev_drop').click(
-	function(){
-		var visible=false;
-		var src = ($(this).attr('src') === 'images/DownArrow.png')
-            ? visible=true
-            : visible=false;
-        if(visible)
-        {
-        	$(this).attr('src', 'images/UpArrow.png');
-			//$("#dev").height(h + $('#hidden_dev').height());
-        	$('#hidden_dev').slideDown(1000);	
-        }
-        else
-        {
-        	$(this).attr('src', 'images/DownArrow.png');
-			//$("#dev").height(h);
-        	$('#hidden_dev').slideUp(1000);	
-        }
+		function(){
+			
+			var visible=false;
+			var src = ($(this).attr('src') === 'images/DownArrow.png')
+				? visible=true
+				: visible=false;
+			if(visible)
+			{
+				$(this).attr('src', 'images/UpArrow.png');
+				//$("#dev").height(h + $('#hidden_dev').height());
+				$('#hidden_dev').slideDown(1000);	
+			}
+			else
+			{
+				$(this).attr('src', 'images/DownArrow.png');
+				//$("#dev").height(h);
+				$('#hidden_dev').slideUp(1000);	
+			}
+			
 		}
 	);
 
