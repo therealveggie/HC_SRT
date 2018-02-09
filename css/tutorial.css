@@ -11,7 +11,7 @@
 html,body {
     height:100%;
     margin:0;
-	background-color: var(--snow); 
+	background-color: var(--seablue); 
  }
  
 div.link {
@@ -29,7 +29,7 @@ div.link:hover {
 
 #container {
 	float: right; 
-	height: 620px;
+	height: 700px;
 	width: 100%;
 }
 
@@ -38,57 +38,56 @@ video {
 }
 
 .row {
-	height: 620px;
+	height: 700px;
 }
 
 .column1 {
     float: left;
-    width: 48%;
+    width: 58%;
     background-color: var(--silver); 
-    height: 620px;
+    height: 700px;
 }
 .column2 {
-	width: 32%;
+	width: 42%;
 	float: right; 
     background-color: #eee;
-    height: 620px;
+    height: 700px;
 	overflow-y: scroll;
 }
 
 .filler {
-	background-color: var(--seablue);
-	width:90%;
-	margin: 50px auto; 
-	height: 3px;
-	border-radius: 2px; 
+	background-color: var(--jet);
+	width:100%;
+	height:47px; 
+	margin-top: -4px; 
 }
 
 .verticalfiller {
-	width: 10%;
+	width: 0%;
 	float: right; 
-	height: 620px; 
+	height: 700px; 
 	background-color: var(--snow);
 }
 
 .verticalfiller2 {
-	width: 10%;
+	width: 0%;
 	float: left;
-	height: 620px;
+	height: 700px;
 	background-color: var(--snow); 
 }
 
 .topContainer {
 	margin: auto;
-	margin-top: 50px; 
-	width: 80%;
-	height: 20px;
-	background-color: var(--seablue); 
+	margin-top: 0px; 
+	width: 100%;
+	height: 0px; /*deprecated right now */
+	background-color: var(--silver); 
 }
 
 .bottomContainer {
 	margin: auto;
-	margin-bottom: 20px;
-	width: 80%;
+	margin-bottom: 0px;
+	width: 100%;
 	height: 5px;
 	background-color: var(--silver);
 }
@@ -102,14 +101,14 @@ video {
 @media only screen and (max-width: 1750px) {
 	
 	.verticalfiller {
-		width: 4%;
+		width: 0%;
 		float: right; 
 		height: 620px; 
 		background-color: var(--snow);
 	}
 
 	.verticalfiller2 {
-		width: 4%;
+		width: 0%;
 		float: left;
 		height: 620px;
 		background-color: var(--snow); 
@@ -123,13 +122,13 @@ video {
 	
 	.column1 {
 		float: left;
-		width: 54%;
+		width: 58%;
 		background-color: var(--silver); 
 		height: 620px;
 	}
 
 	.column2 {
-		width: 38%;
+		width: 42%;
 		float: right; 
 		background-color: #eee;
 		height: 620px;
@@ -144,14 +143,14 @@ video {
 @media only screen and (max-width: 1430px) {
 	
 	.verticalfiller {
-		width: 2%;
+		width: 0%;
 		float: right; 
 		height: 550px; 
 		background-color: var(--snow);
 	}
 
 	.verticalfiller2 {
-		width: 2%;
+		width: 0%;
 		float: left;
 		height: 550px;
 		background-color: var(--snow); 
@@ -165,13 +164,13 @@ video {
 	
 	.column1 {
 		float: left;
-		width: 64%;
+		width: 66%;
 		background-color: var(--silver); 
 		height: 550px;
 	}
 	
 	.column2 {
-		width: 32%;
+		width: 34%;
 		float: right; 
 		background-color: #eee;
 		height: 550px;

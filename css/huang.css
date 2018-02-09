@@ -8,6 +8,7 @@
 
 body{
 	margin: 0;
+	background-color: var(--seablue);
 }
 
 /*.bkground{
@@ -18,6 +19,45 @@ body{
     width:100%;
 }
 
+.teampic {
+	width: 100%;
+	height: 690px; 
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/bkground1.jpg');
+}
+
+.imageText {
+	display: table;
+	font-family: 'raleway';
+	font-size: 60px;
+	color: var(--snow);
+	padding-top: 100px; 
+	margin: 0 auto;
+}
+
+.imageBox {
+	display: table;
+	font-family: 'raleway';
+	color: var(--jet);
+	margin: 0 auto; 
+	margin-top: 40px; 
+	background-color: var(--snow);
+	border-radius: 3px;
+	padding: 20px;
+	opacity: 0.9;
+}
+
+.info1 {
+	margin-left: 37px;
+}
+
+.info1 div {
+	margin: 3px; 
+}
+
+.imageName {
+	padding: 10px 30px;
+	font-size: 32px;
+}
 .contact{
     width:100%;
     background-image:url("../images/bkground.jpg");
