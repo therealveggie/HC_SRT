@@ -5,9 +5,9 @@ $(document).ready(function() {
 	var h = Math.max($('#dev_head').height(), $('#stc_head').height() , $('#sme_head').height());
 	$('h1').height(h);
 	
-	$('#hidden_dev').slideUp();
-	$('#hidden_sme').slideUp();
-	$('#hidden_stc').slideUp();
+	$('#hidden_dev').hide(0);
+	$('#hidden_sme').hide(0);
+	$('#hidden_stc').hide(0);
 	
 	$(window).resize(function(){
 		console.log("got here");
@@ -37,13 +37,16 @@ $(document).ready(function() {
 			{
 				$(this).attr('src', 'images/UpArrow.png');
 				//$("#dev").height(h + $('#hidden_dev').height());
-				$('#hidden_dev').slideDown(1000);	
+				console.log("scrolllll");
+				$('#hidden_dev').slideDown();
+				//window.scrollTo(0,0);				
+				
 			}
 			else
 			{
 				$(this).attr('src', 'images/DownArrow.png');
 				//$("#dev").height(h);
-				$('#hidden_dev').slideUp(1000);	
+				$('#hidden_dev').slideUp();	
 			}
 			
 		}
