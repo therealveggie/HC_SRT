@@ -15,10 +15,6 @@ body{
      background-image:url("../images/bkground.jpg");
 }*/
 
-.back{
-    width:100%;
-}
-
 .teampic {
 	width: 100%;
 	height: 690px; 
@@ -139,4 +135,13 @@ body{
 
 .info h1 {
 	font-family: 'raleway'; 
+}
+
+
+@media only screen and (max-height: 850px) {
+	.teampic {
+		width: 100%;
+		height: 550px; 
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/bkground1.jpg');
+	}
 }
