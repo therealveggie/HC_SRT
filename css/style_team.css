@@ -3,7 +3,7 @@
 }
 
 body{
-    height: 100%
+    height: 100%;
 }
 
 h1 {
@@ -13,6 +13,10 @@ h1 {
   color: var(--seablue);
 }
 
+tr {
+	padding: 40px; 
+}
+
 /* Create three equal columns that floats next to each other */
 .column {
     width: 30%;
@@ -20,12 +24,15 @@ h1 {
     
     padding: 10px;
     
-    background-color: var(--platinum);
+    background-color: var(--snow);
     margin-top: 1.66%;
     margin-right: 1.66%;
     margin-left: 1.66% ;
     border-radius: 3px;
     margin-bottom: 40px; 
+	
+	border: 2px solid var(--seablue); 
+	border-radius: 50px;
 }
 
 .innercolumn {
@@ -35,7 +42,12 @@ h1 {
 	font-family: Arial;
 	font-size: 20px; 
 }
+
 /* Clear floats after the columns */
+.row {
+	background-color: var(--snow);
+}
+
 .row:after{
     clear: both;
     content: "";
@@ -65,7 +77,12 @@ h1 {
     margin-right: 1.66%;
     margin-left: 1.66% ;
     border-radius: 3px;
-    
+}
+
+.positions {
+	margin: 0 auto; 
+	font-family: 'nunito';
+	font-size: 20px;  
 }
 
 .bar {
@@ -84,6 +101,8 @@ h1 {
 }
 
 .description {
+	width: 90%;
+	margin-left: 5%; 
     text-align: justify;
     font-family: 'Nunito'; 
     font-size: 20px;
@@ -99,6 +118,12 @@ h1 {
 	width:100%;
 	height:47px; 
 	margin-top: -4px; 
+}
+
+.filler2 {
+	background-color: var(--seablue);
+	width: 100%;
+	height: 51px;
 }
 
 .imgdiv{
