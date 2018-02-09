@@ -133,6 +133,7 @@ td {
 	font-family: 'raleway';
 	font-size: 60px;
 	color: var(--snow);
+	padding: 0px 60px; 
 	padding-top: 150px; 
 	margin: 0 auto;
 }
