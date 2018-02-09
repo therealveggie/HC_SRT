@@ -18,6 +18,7 @@
 	
 	<!-- Other -->
 	<script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+	<script src="js/tools.js" type="text/javascript"></script>
 	
 	<title>HC SRT | Tools</title>
 </head>
@@ -46,11 +47,23 @@
 	
 	<h1>Tools</h1>
 	<div class=bar id=jet></div>
-	<div id="ribboncontainer">
-		<img src="images/ribbon pics/Ribbon.png " class="segimg">
-	</div>
+	<img src="images/ribbon pics/Ribbon.png " class="segimg" style="width:100%;height:auto;" usemap="reigons">
+	
+	<map name="reigons">
+		<area shape="rect" 	id="login" 			coords="0,0,194,110" 		title="Login" />
+		<area shape="rect" 	id="tempNfields" 	coords="195,0,370,110" 		title="Templates and Fields" />
+		<area shape="rect" 	id="autopop" 		coords="371,0,531,110" 		title="Auto-Population" />
+		<area shape="rect" 	id="screen" 		coords="532,0,624,110" 		title="Screen" />
+		<area shape="rect" 	id="review" 		coords="625,0,969,110" 		title="Review" />
+		<area shape="rect" 	id="issues" 		coords="970,0,1165,110" 	title="Issues" />
+		<area shape="rect" 	id="reports" 		coords="1166,0,1286,110" 	title="Reports" />
+		<area shape="rect" 	id="ose" 			coords="1287,0,1457,110" 	title="OSE" />
+		<area shape="rect" 	id="help" 			coords="1456,0,1553,110" 	title="Help" />
 		
-	<!-- Script for the drop down in the navBar -->
+	</map>
+	
+	
+	
 	<script>
 	
       function drop2() {
